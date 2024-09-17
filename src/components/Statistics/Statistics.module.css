@@ -1,0 +1,165 @@
+.StatisticsMainContainer {
+    padding: 50px 0 70px 0;
+    background-color: var(--Light-Gray);
+}
+
+.TittleContainer {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.TittleContainer h2 {
+    color: var(--Very-Dark-Violet);
+    font-size: 3rem;
+}
+
+.TittleContainer p {
+    margin-top: 12px;
+    padding: 0 30px;
+    color: var(--Very-Dark-Blue);
+    font-size: 1.7rem;
+}
+
+.BoxesContainer {
+    margin-top: 100px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+    text-align: center;
+    position: relative;
+}
+
+.Line {
+    width: 8px;
+    height: 480px;
+    position: absolute;
+    top: 220px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    background-color: var(--Cyan);
+    z-index: 1;
+}
+
+.Box1,
+.Box2,
+.Box3 {
+    padding: 65px 25px 40px 25px;
+    background-color: white;
+    border-radius: 8px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.Box1 h3,
+.Box2 h3,
+.Box3 h3 {
+    color: var(--Very-Dark-Violet);
+    font-size: 2.3rem;
+}
+
+.Box1 p,
+.Box2 p,
+.Box3 p {
+    margin-top: 14px;
+    color: var(--Grayish-Violet);
+    font-size: 1.5rem;
+}
+
+.IconContainer {
+    width: 80px;
+    height: 80px;
+
+    background-color: var(--Dark-Violet);
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+}
+
+
+
+/* !==========MEDIA QUERIES========== */
+/* !======768px====== */
+@media screen and (min-width: 768px) {
+    .TittleContainer {
+        padding: 0 120px;
+    }
+
+    .BoxesContainer {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .Line {
+        width: 400px;
+        height: 8px;
+        top: 50%;
+        bottom: 50%;
+    }
+}
+
+
+
+/* !======1200px====== */
+@media screen and (min-width: 1200px) {
+    .TittleContainer {
+        padding: 0 400px;
+    }
+
+    .TittleContainer h2 {
+        font-size: 4rem;
+    }
+
+    .BoxesContainer {
+        height: 360px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .Box1,
+    .Box2,
+    .Box3 {
+        max-width: 350px;
+        height: 270px;
+        text-align: left;
+    }
+
+    .Box2 {
+        align-self: center;
+    }
+
+    .Box3 {
+        align-self: flex-end;
+    }
+
+    .StatisticsMainContainer {
+        padding-bottom: 100px;
+    }
+
+    .IconContainer {
+        left: 20%;
+        right: 50%;
+        transform: translate(-50%, 0);
+    }
+
+    .Line {
+        width: 600px;
+        height: 8px;
+        top: 40%;
+        /* z-index: 5; */
+    }
+}
+
+

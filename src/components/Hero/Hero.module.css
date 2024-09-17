@@ -1,0 +1,127 @@
+.HeroImageContainer {
+    width: 100%;
+    position: relative;
+}
+
+.HeroImageContainer img {
+    width: 132%;
+    position: absolute;
+    top: -20px;
+    right: -148px;
+}
+
+.HeroTextContainer {
+    padding: 0 30px;
+    position: relative;
+    top: 358px;
+    text-align: center;
+}
+
+.HeroTextContainer h1 {
+    color: var(--Very-Dark-Violet);
+    font-size: 4rem;
+    line-height: 44px;
+}
+
+.HeroTextContainer p {
+    margin-top: 15px;
+    color: var(--Grayish-Violet);
+    font-size: 1.7rem;
+}
+
+.HeroTextContainer button {
+    margin: 25px auto;
+    padding: 14px 20px;
+    width: 178px;
+    background-color: var(--Cyan);
+    border-radius: 60px;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* ======HOVER====== */
+.HeroTextContainer button:hover {
+    background-color: hsl(180, 66%, 70%);
+    cursor: pointer;
+}
+
+
+/* ==========MEDIA QUERIES========== */
+/* ======768px====== */
+@media screen and (min-width: 768px) {
+    .HeroMainContainer {
+        padding-left: 40px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: static;
+        overflow: hidden;
+    }
+
+    .HeroImageContainer {
+        position: static;
+    }
+
+    .HeroImageContainer img {
+        position: static;
+    }
+
+    .HeroTextContainer {
+        padding: 0;
+        width: 550px;
+        text-align: left;
+        top: 70px;
+    }
+
+    .HeroTextContainer h1 {
+        width: 300px;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    .HeroTextContainer p {
+        margin: 10px 0;
+        width: 300px;
+    }
+}
+
+
+/* ======1200px====== */
+@media screen and (min-width: 1200px) {
+    .HeroMainContainer {
+        padding-left: 160px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: static;
+        overflow: hidden;
+    }
+
+    .HeroImageContainer {
+        width: 45%;
+        position: static;
+    }
+
+    .HeroImageContainer img {
+        position: static;
+    }
+
+    .HeroTextContainer {
+        padding: 0;
+        width: 550px;
+        text-align: left;
+        top: 70px;
+    }
+
+    .HeroTextContainer h1 {
+        width: 550px;
+        font-size: 7rem;
+        line-height: 8rem;
+    }
+
+    .HeroTextContainer p {
+        margin: 10px 0;
+        width: 450px;
+    }
+}

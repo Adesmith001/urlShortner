@@ -1,0 +1,136 @@
+.FooterMainContainer {
+    padding: 60px 50px;
+    background-color: var(--Very-Dark-Violet);
+    text-align: center;
+}
+
+.FooterMainContainer h2 {
+    color: white;
+    font-size: 3.6rem;
+}
+
+.FooterTextMainContainer {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.FooterTextMainContainer h3 {
+    margin: 0 auto 25px auto;
+    color: white;
+}
+
+.FooterTextMainContainer a {
+    margin: 0 auto 14px auto;
+    color: var(--Gray);
+    font-weight: 500;
+}
+
+.FeaturesContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.SocialMediaContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 38px;
+}
+
+.SocialMediaContainer img {
+    width: 32px;
+}
+
+.Text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+
+/* !==========MEDIA QUERIES========== */
+/* !======768px====== */
+@media screen and (min-width: 768px) {
+    .FooterMainContainer {
+        padding: 50px;
+    }
+
+    .Text {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 50px;
+    }
+}
+
+/* !======1200px====== */
+@media screen and (min-width: 1200px) {
+    .FooterMainContainer {
+        padding: 50px 160px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .FooterMainContainer h2 {
+        margin: -15px 185px 0 0;
+        padding: 0;
+    }
+
+    .FooterTextMainContainer {
+        margin: 0 auto;
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .FeaturesContainer{
+        width: 170px;
+        gap: 10px;
+        text-align: left;
+    }
+
+    .Text {
+        gap: 5px;
+    }
+
+    .FeaturesContainer a {
+        font-size: 1.4rem;
+    }
+
+    .FeaturesContainer a {
+        margin: 0;
+        padding: 0;
+    }
+
+    .FeaturesContainer h3 {
+        margin: 0 0 10px 0;
+        padding: 0;
+        font-size: 1.7rem;
+    }
+
+    .SocialMediaContainer {
+        margin: 0;
+        align-items: flex-start;
+        gap: 28px;
+    }
+
+    .SocialMediaContainer img {
+        width: 28px;
+    }
+}
+
+
+
+/* ! ========HOVER======== */
+.FeaturesContainer a:hover {
+    color: var(--Cyan);
+}
+
+.SocialMediaContainer a img:hover {
+    width: 30px;
+    fill: var(--Cyan);
+}

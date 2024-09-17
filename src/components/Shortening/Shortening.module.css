@@ -1,0 +1,233 @@
+.ShorteningMainContainer {
+    margin-top: 480px;
+    padding: 0 30px;
+    background-color: var(--Light-Gray);
+    position: relative;
+}
+
+.AllLinksContainer {
+    position: relative;
+    top: -55px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.InputAndButtonContainer {
+    padding: 20px;
+
+    position: relative;
+    left: 50%;
+    right: 50%;
+    top: -74px;
+    transform: translate(-50%, 0);
+
+    background-color: var(--Dark-Violet);
+    background-image: url('../../assets/bg-shorten-mobile.svg');
+    background-repeat: no-repeat;
+    background-position-x: 70px;
+    background-position-y: -10px;
+
+    border-radius: 8px;
+}
+
+.InputContainer input {
+    padding: 12px 14px;
+    width: 100%;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+}
+
+.ButtonContainer button {
+    margin: 15px auto 0 auto;
+    padding: 10px;
+    width: 100%;
+    background-color: var(--Cyan);
+    border-radius: 6px;
+    color: white;
+    font-weight: 700;
+}
+
+.InputError {
+    margin: 5px 0 0 4px;
+    color: var(--Red);
+    font-size: 1.1rem;
+    display: none;
+}
+
+
+/* !======HOVER====== */
+.ButtonContainer button:hover {
+    background-color: hsl(180, 66%, 70%);
+    cursor: pointer;
+}
+
+.InputContainer input::placeholder {
+    font-size: 1.3rem;
+}
+
+
+
+/* !======LINKS====== */
+.LinkMainContainer {
+    padding: 8px 0;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.OriginalLinkContainer {
+    padding: 4px 15px 8px 15px;
+    border-bottom: 1px solid var(--Gray);
+    color: var(--Very-Dark-Violet);
+}
+
+.LinkShortedContainer, .LinksCopyButtonContainer {
+    padding: 5px 15px;
+}
+
+.OriginalLinkContainer p {
+    font-size: 1.4rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.LinkShortedContainer a {
+    color: var(--Cyan);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.LinksCopyButtonContainer button {
+    margin: 0 auto;
+    padding: 6px;
+    width: 100%;
+    border-radius: 6px;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.LinksCopyButtonContainer button:hover {
+    background-color: hsl(180, 66%, 70%);
+    cursor: pointer;
+}
+
+
+
+
+/* !=========MEDIA QUERIES========= */
+/* !======768px====== */
+@media screen and (min-width: 768px) {
+    .ShorteningMainContainer {
+        margin-top: 140px;
+        padding: 0 40px;
+    }
+    
+    .InputAndButtonContainer {
+        display: flex;
+        gap: 20px;
+        background-image: url('../../assets/bg-shorten-desktop.svg');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .InputAndButtonContainer .InputContainer {  
+        width: 78%;
+        display: flex;
+        align-items: center;
+    }
+
+    .InputAndButtonContainer .ButtonContainer {
+        width: 22%;
+        margin-bottom: 15px;
+    }
+
+    .LinkMainContainer {
+        padding: 3px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .OriginalLinkContainer {
+        padding: 0 15px;
+        border: none;
+    }
+
+    .OriginalLinkContainer p {
+        max-width: 285px;
+    }
+
+    .LinkShortenAndButtonContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .LinkShortenAndButtonContainer button {
+        width: 90px;
+    }
+
+    .ButtonContainer button {
+        margin-top: 0;
+    }
+
+    .InputContainer {
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .InputContainer p {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+
+/* !======1200====== */
+@media screen and (min-width: 1200px) {
+    .ShorteningMainContainer {
+        padding: 0 160px;
+    }
+
+    .InputAndButtonContainer {
+        top: -60px;
+        gap: 30px;
+    }
+
+    .AllLinksContainer {
+        top: -40px;
+    }
+
+    .InputAndButtonContainer {
+        padding: 45px 50px 25px 50px;
+        background-position-y: -2px;
+    }
+
+    .InputAndButtonContainer button {
+        width: 180px;
+    }
+
+    .ButtonContainer {
+        display: flex;
+    }
+
+    .ButtonContainer button {
+        margin-top: 0;
+        height: 44px;
+    }
+
+    .LinkShortenAndButtonContainer button {
+        width: 100px;
+    }
+
+    .LinkMainContainer {
+        padding: 6px 0;
+    }
+
+    .OriginalLinkContainer p {
+        max-width: 610px;
+    }
+}

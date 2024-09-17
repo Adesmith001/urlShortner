@@ -1,0 +1,60 @@
+.BoostMainContainer {
+    padding: 70px 20px;
+    background-image: url(../../assets/bg-boost-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--Dark-Violet);
+    text-align: center;
+}
+
+.BoostMainContainer h2 {
+    margin-top: 35px;
+    color: white;
+}
+
+.BoostMainContainer button {
+    margin: 25px auto;
+    padding: 14px 20px;
+    width: 178px;
+    background-color: var(--Cyan);
+    border-radius: 60px;
+    color: white;
+    font-weight: 700;
+}
+
+
+/* ! ======HOVER====== */
+.BoostMainContainer button:hover {
+    background-color: hsl(180, 66%, 70%);
+    cursor: pointer;
+}
+
+
+/* !==========MEDIA QUERIES========== */
+/* !======768px====== */
+@media screen and (min-width: 768px) {
+    .BoostMainContainer {
+        padding: 0;
+        height: 200px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-image: url(../../assets/bg-boost-desktop.svg);
+    }
+}
+
+
+/* !======1200px====== */
+@media screen and (min-width: 1200px) {
+    .BoostMainContainer {
+        height: 250px;
+    }
+
+    .BoostMainContainer h2 {
+        font-size: 4rem;
+    }
+}

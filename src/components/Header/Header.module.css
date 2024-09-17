@@ -1,0 +1,184 @@
+.HeaderContainer {
+    padding: 50px 160px;
+    display: flex;
+}
+
+.MenuMainContainer {
+    display: flex;
+    visibility: visible;
+    position: relative;
+}
+
+.OptionsText {
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: left;
+}
+
+.LoginText {
+    margin: -8px 0 0 0;
+    width: 100%;
+    font-size: 1.6rem;
+    text-align: right;
+}
+
+a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: var(--Grayish-Violet);
+}
+
+button {
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    font-size: 1.7rem;
+}
+
+.Login {
+    background-color: white;
+    color: var(--Grayish-Violet);
+    font-weight: 700;
+}
+
+.SignUp {
+    padding: 10px 22px;
+    background-color: var(--Cyan);
+    border-radius: 60px;
+    color: white;
+    font-weight: 700;
+}
+
+a:hover, .Login:hover {
+    color: var(--Very-Dark-Blue);
+    cursor: pointer;
+}
+
+.SignUp:hover {
+    background-color: hsl(180, 66%, 70%);
+    cursor: pointer;
+}
+
+.MenuIcon {
+    visibility: hidden;
+    color: var(--Grayish-Violet);
+}
+
+
+
+/* ==========MEDIA QUERIE FOR RESPONSIVE LATERAL MENU========== */
+/* ====== Screen < 767px ====== */
+@media screen and (max-width: 767px) {
+    .HeaderContainer {
+        padding: 40px 30px 30px 30px;
+        position: relative;
+    }
+
+    .MenuIcon {
+        position: absolute;
+        top: 3.8rem;
+        right: 3rem;
+        font-size: 3rem;
+        visibility: visible;
+    }
+
+    a {
+        margin: 0;
+        color: white;
+        font-weight: 700;
+    }
+
+    .MenuMainContainer {
+        padding: 10px 25px;
+        position: absolute;
+        right: -82%;
+
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 0);
+        transition: ease-in-out 0.6s;
+        
+        width: 330px;
+        top: 95px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        border-radius: 12px;
+        background-color: var(--Dark-Violet);
+        z-index: 99;
+    }
+
+    .OptionsText {
+        padding: 30px 0 30px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0px;
+        text-align: center;
+        border-bottom: 1px solid hsl(257, 27%, 40%);
+    }
+
+    .LoginText {
+        margin: 0;
+        padding: 30px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 30px 0px;
+    }
+
+    .Login {
+        margin: 0;
+        background-color: var(--Dark-Violet);
+        color: white;
+        font-weight: 700;
+    }
+
+    .SignUp {
+        margin: 0 auto;
+        width: 100%;
+        height: 45px;
+    }
+
+    a:hover, .Login:hover {
+        color: white;
+    }
+}
+
+
+
+/* ====== Screen > 767px ====== */
+@media screen and (min-width: 768px) {
+    .HeaderContainer {
+        padding: 40px 30px;
+        
+    }
+
+    .HeaderContainer .OptionsText {
+        margin: 4px 0 0 -160px;
+        padding: 0;
+    }
+
+    .HeaderContainer .LoginText {
+        margin-left: 50px;
+    }
+}
+
+
+
+/* ====== Screen > 1200 ====== */
+@media screen and (min-width: 1200px) {
+    .HeaderContainer {
+        padding: 40px 160px;
+    }
+
+    .MenuMainContainer {
+        width: 100%;
+        display: flex;
+    }
+
+    .HeaderContainer .OptionsText {
+        position: relative;
+        right: -130px;
+    }
+}
