@@ -16,7 +16,7 @@ const Footer = () => {
                 <div className={styles.Text}>
                     <div className={styles.FeaturesContainer}>
                         <h3>Features</h3>
-                        <a href="">Link Shortening</a>
+                        <a href="https://urlshortner-theta.vercel.app/">Link Shortening</a>
                         <a href="">Branded Links</a>
                         <a href="">Analytics</a>
                     </div>

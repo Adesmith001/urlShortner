@@ -17,6 +17,7 @@ const Header = () => {
       }
     }, []);
 
+
   return (
     <div className={styles.HeaderContainer}>
       <div className={styles.ImageContainer}>

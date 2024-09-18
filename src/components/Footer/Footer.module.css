@@ -53,8 +53,8 @@
 
 
 
-/* !==========MEDIA QUERIES========== */
-/* !======768px====== */
+/* ==========MEDIA QUERIES========== */
+/* ======768px====== */
 @media screen and (min-width: 768px) {
     .FooterMainContainer {
         padding: 50px;
@@ -68,7 +68,7 @@
     }
 }
 
-/* !======1200px====== */
+/* ======1200px====== */
 @media screen and (min-width: 1200px) {
     .FooterMainContainer {
         padding: 50px 160px;
@@ -125,7 +125,7 @@
 
 
 
-/* ! ========HOVER======== */
+/*  ========HOVER======== */
 .FeaturesContainer a:hover {
     color: var(--Cyan);
 }

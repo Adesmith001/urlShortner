@@ -24,7 +24,7 @@
 }
 
 
-/* ! ======HOVER====== */
+/* ======HOVER====== */
 .BoostMainContainer button:hover {
     background-color: hsl(180, 66%, 70%);
     cursor: pointer;
